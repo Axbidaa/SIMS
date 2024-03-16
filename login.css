@@ -25,7 +25,7 @@ body {
     min-height: 100vh;
     background: url(images/background.jpg) no-repeat;
     background-size: cover ;
-    background-position: center;
+    background-position: bottom;
 }
 
 .logo {
@@ -85,12 +85,20 @@ body {
 }
 
 /* Home */
+.sims-text {
+    font-size: 5em;
+    line-height: 1;
+}
+
 .home {
+    font-size: 1em;
     position: relative;
     width: 400px;
     color: white;
     transition: 0.2s ease;
 }
+
+
 
 .home.active-popup {
     font-size: 0;
