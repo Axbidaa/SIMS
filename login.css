@@ -86,16 +86,25 @@ body {
 
 /* Home */
 .home {
+    position: relative;
+    width: 400px;
     color: white;
+    transition: 0.2s ease;
+}
+
+.home.active-popup {
+    font-size: 0;
+    width: 0;
 }
 
 /* Form */
 .wrapper {
+    font-size: 0em;
     position: relative;
-    width: 400px;
+    width: 0;
     height: 440px;
     background: rgba(0, 0, 0, 0.301);
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
@@ -103,12 +112,14 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transform: scale(0);
-    transition: height 0.2s ease, transform 0.5s;
+    
+    transition: height 0.2s ease, width 0.2s ease, transform 0.2s ease, font-size 0.2s ease;
 }
 
 .wrapper.active-popup {
-    transform: scale(1);
+    font-size: 1em;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .wrapper.active {
