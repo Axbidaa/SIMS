@@ -34,14 +34,7 @@ section h1 {
 
 .section-body {
     display: flex;
-}
-
-.section-body-text {
-    flex: 1
-}
-
-.section-body-image {
-    flex: 1
+    height: 60vh;
 }
 
 /*==================================== Navigation ====================================*/
@@ -369,5 +362,85 @@ section h1 {
     object-fit: cover;
 }
 
+.section-body-text {
+    flex: 1
+}
 
+.section-body-image {
+    flex: 1
+}
+
+/* ==================================== Services ==================================== */
+#Services .section-body p{
+    font-size: 1.5em;
+}
+
+.a {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.a-top {
+    flex: 1; 
+}
+
+.a-bottom {
+    flex: 1;
+}
+
+#student {
+    flex: 1;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.b {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+.b-top {
+    flex: 9; 
+}
+
+.b-bottom {
+    flex: 1;
+}
+
+
+#employer {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.c {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.c-top {
+    flex: 1;
+}
+.c-bottom {
+    flex: 1;
+}
+
+#socialize {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
