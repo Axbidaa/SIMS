@@ -7,8 +7,10 @@
 }
 
 header {
+    --background: rgba(0, 0, 0, 0.504);
+
     position: fixed;
-    background: rgba(0, 0, 0, 0.504);
+    background: var(--background);
     top: 0;
     left: 0;
     width: 100%;
@@ -17,6 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    transition: 0.5s;
 }
 
 section:not(#Home) {
@@ -35,6 +38,10 @@ section h1 {
 .section-body {
     display: flex;
     height: 60vh;
+}
+
+.nav-scrolled {
+    --background: rgb(37, 37, 37);
 }
 
 /*==================================== Navigation ====================================*/
@@ -90,9 +97,8 @@ section h1 {
 
 .navigation .button-login-popup:hover {
     background-color: white;
-    color: #13293a;
+    color: #2e2e2e;
     letter-spacing: 1px;
-
 }
 
 /*==================================== Home ====================================*/

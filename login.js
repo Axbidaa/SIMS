@@ -5,18 +5,52 @@ const buttonPopup = document.querySelector('.button-login-popup');
 const iconClose = document.querySelector('.icon-close');
 const home = document.querySelector('.home');
 
-registerLink.addEventListener('click', ()=> {
+registerLink.addEventListener('click', () => {
     wrapper.classList.add('active');
 });
 
-loginLink.addEventListener('click', ()=> {
+loginLink.addEventListener('click', () => {
     wrapper.classList.remove('active');
 });
 
-buttonPopup.addEventListener('click', ()=> {
+buttonPopup.addEventListener('click', () => {
     wrapper.classList.add('active-popup');
 });
 
-iconClose.addEventListener('click', ()=> {
+iconClose.addEventListener('click', () => {
     wrapper.classList.remove('active-popup');
 });
+
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+const header = document.querySelector('header');
+const sectionOne = document.querySelector('#Home');
+
+const sectionOneOptions = {
+    rootMargin: "-200px 0px 0px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            header.classList.add('nav-scrolled');
+        } else {
+            header.classList.remove('nav-scrolled');
+        }
+    })
+
+}, sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
