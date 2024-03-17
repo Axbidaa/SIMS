@@ -132,7 +132,7 @@ section h1 {
     font-size: 1.5em;
     color: white;
     animation: textPop 0.5s forwards;
-    animation-delay: 2s;
+    animation-delay: 1.6s;
     opacity: 0%;
 }
 
