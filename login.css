@@ -1,4 +1,4 @@
-/*==================================== Overall and section ====================================*/
+/*==================================== Desktop ====================================*/
 html {
     scroll-behavior: smooth;
 }
@@ -31,8 +31,7 @@ section:not(#Home) {
     padding-left: 60px;
     padding-right: 60px;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 section h1 {
@@ -48,7 +47,7 @@ section h1 {
     --background: rgb(37, 37, 37);
 }
 
-/*==================================== Navigation ====================================*/
+/*------ Navigation ------*/
 
 .logo {
     font-size: 2em;
@@ -105,7 +104,7 @@ section h1 {
     letter-spacing: 1px;
 }
 
-/*==================================== Home ====================================*/
+/*------ Home ------*/
 #Home {
     display: flex;
     justify-content: center;
@@ -171,7 +170,7 @@ section h1 {
     width: 0;
 }
 
-/* Form */
+/*------ Form ------*/
 .wrapper {
     font-size: 0em;
     position: relative;
@@ -349,7 +348,7 @@ section h1 {
     text-decoration: underline;
 }
 
-/* ==================================== About ==================================== */
+/*------ About ------*/
 #About .section-body-text {
     display: flex;
     align-items: center;
@@ -380,7 +379,7 @@ section h1 {
     flex: 1
 }
 
-/* ==================================== Services ==================================== */
+/*------ Services ------*/
 #Services .section-body p{
     font-size: 1.5em;
 }
@@ -456,3 +455,13 @@ section h1 {
     
 }
 
+/*====================================================== Mobile devices ======================================================*/
+@media (max-width: 768px) {
+    #About {
+        height: 30px;
+    }
+
+    .section-body {
+        flex-direction: column;
+    }
+}
