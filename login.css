@@ -473,6 +473,7 @@ section h1 {
     /*------ About ------*/
     #About {
         height: 30px;
+        padding-bottom: 20px;
     }
 
     #About .section-body {
@@ -480,15 +481,18 @@ section h1 {
         font-size: 0.5rem;
     }
 
-    /*------ Services ------*/
-    #Services .section-body {
-        font-size: 0.8rem;
-    }
 
     #studying {
         height: 250px;
         width: 250px;
     }
+
+    /*------ Services ------*/
+    #Services .section-body {
+        font-size: 0.6rem;
+    }
+
+    
 
     #Services .section-body {
         flex-direction: column;
@@ -500,12 +504,14 @@ section h1 {
     }
 
     #employer {
-        object-position: -40px 0px;
+        object-position: -60px 0px;
     }
 
     .a, .b, .c {
         flex-direction: row;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .a-top, .b-top, .c-top {
@@ -515,8 +521,5 @@ section h1 {
     .a-bottom, .b-bottom, .c-bottom {
         flex: 1
     }
-
-    
-
 
 }
