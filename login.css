@@ -457,11 +457,66 @@ section h1 {
 
 /*====================================================== Mobile devices ======================================================*/
 @media (max-width: 768px) {
+    section:not(#Home) {
+        padding-top: 8px ;
+        padding-left: 6px;
+        padding-right: 6px;
+        height: auto;
+        
+    }
+
+    section h1 {
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+
+    /*------ About ------*/
     #About {
         height: 30px;
     }
 
-    .section-body {
+    #About .section-body {
+        display: block;
+        font-size: 0.5rem;
+    }
+
+    /*------ Services ------*/
+    #Services .section-body {
+        font-size: 0.8rem;
+    }
+
+    #studying {
+        height: 250px;
+        width: 250px;
+    }
+
+    #Services .section-body {
         flex-direction: column;
     }
+
+    #employer,#student,#socialize {
+        width: 130px;
+        height: 130px;
+    }
+
+    #employer {
+        object-position: -40px 0px;
+    }
+
+    .a, .b, .c {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .a-top, .b-top, .c-top {
+        flex: 1;
+    }
+
+    .a-bottom, .b-bottom, .c-bottom {
+        flex: 1
+    }
+
+    
+
+
 }
