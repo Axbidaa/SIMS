@@ -470,6 +470,49 @@ section h1 {
         padding-left: 20px;
     }
 
+    /*------ Navigation ------*/
+    header {
+        padding: 10px;
+    }
+
+    .home-nav, .about-nav, .services-nav {
+        display: none;
+    }
+
+    .navigation a {
+        font-size: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+
+    }
+
+    .navigation {
+       position: relative;
+    }
+
+    .navigation .button-login-popup {
+        width: 90px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid white;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1.1em;
+        color: white;
+        font-weight: 500;
+        margin-left: 40px;
+        transition: 0.5s;
+    }
+
+    .welcome {
+        display: none;
+    }
+
+    
+
     /*------ About ------*/
     #About {
         height: 30px;
