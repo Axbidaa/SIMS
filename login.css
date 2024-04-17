@@ -12,7 +12,6 @@ html {
 
 header {
     --background: rgba(0, 0, 0, 0.504);
-
     position: fixed;
     background: var(--background);
     top: 0;
@@ -507,11 +506,24 @@ section h1 {
         transition: 0.5s;
     }
 
+    
+
+    .wrapper.active welcome{
+        display: none;
+    }
+    
+    /*------ Home ------*/
     .welcome {
+        padding: 20px;
+    }
+
+    .welcome.inactive {
         display: none;
     }
 
-    
+    .wrapper {
+        transition: none;
+    }
 
     /*------ About ------*/
     #About {
@@ -526,8 +538,8 @@ section h1 {
 
 
     #studying {
-        height: 250px;
-        width: 250px;
+        height: 200px;
+        width: 200px;
     }
 
     /*------ Services ------*/
